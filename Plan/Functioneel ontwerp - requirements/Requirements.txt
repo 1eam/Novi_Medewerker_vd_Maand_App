@@ -1,0 +1,14 @@
+REQUIREMENTS
+- Applicatie waar foto's mee gemaakt kunnen worden.
+- Applicatie waar foto's uit de galerij gekozen kunnen worden.
+- (De bewerkte) foto's worden opgeslagen op het toestel.
+
+- Op een volgend tablad kunnen minimaal 5 leuke stickers toegevoegd worden.
+- Met een druk op de knop kan een automatische tekst toegevoegd worden welke moet bevatten:
+  "Novi medewerker van...[invoeractuele maand]"
+
+- De foto wordt opgeslagen om er verder, via een derde tabblad de bewerkte foto te kunnen bekijken,   selecteren en verzenden via SMS, WhatsApp,
+
+MOTIEF:
+- "Wij denken dat deze app belangrijk is voor de teambuilding binnen Novi en de
+waardering van onze collega’s. "
