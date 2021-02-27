@@ -1,4 +1,4 @@
-package com.example.noviMedewerkerVDMaandApp;
+package com.esther.noviMedewerkerMaandApp;
 
 import android.content.Context;
 
@@ -21,6 +21,6 @@ public class ExampleInstrumentedTest {
     public void useAppContext() {
         // Context of the app under test.
         Context appContext = InstrumentationRegistry.getInstrumentation().getTargetContext();
-        assertEquals("com.example.noviMedewerkerVDMaandApp", appContext.getPackageName());
+        assertEquals("com.esther.noviMedewerkerMaandApp", appContext.getPackageName());
     }
 }
