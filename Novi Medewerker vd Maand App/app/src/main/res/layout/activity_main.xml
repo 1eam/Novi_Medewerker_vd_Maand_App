@@ -26,12 +26,11 @@
         android:layout_gravity="center_horizontal"
         android:layout_margin="8dp"
         android:layout_weight="1"
-        android:background="@drawable/button_launcher_background"
+        android:background="#C6835F"
         android:text="GALERIJ"
         android:textColor="#4C4C4C"
         android:textSize="12sp"
-        android:textStyle="bold"
-        app:backgroundTint="#22FFFFFF" />
+        android:textStyle="bold" />
 
     <TextView
         android:id="@+id/infoText"
