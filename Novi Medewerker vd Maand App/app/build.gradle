@@ -7,13 +7,53 @@ android {
     buildToolsVersion "30.0.3"
 
     defaultConfig {
-        applicationId "com.example.noviMedewerkerVDMaandApp"
-        minSdkVersion 16
+        applicationId "com.esther.noviMedewerkerMaandApp"
+        minSdkVersion 18
         targetSdkVersion 30
         versionCode 1
         versionName "1.0"
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    // Android Plugin
+    apply plugin: 'com.android.application'
+    // PESDKPlugin
+    apply plugin: 'ly.img.android.sdk'
+    // Kotlin Plugin
+    apply plugin: 'kotlin-android'
+
+    // PESDKPlugin configuration
+    imglyConfig {
+
+        pesdk {
+            enabled true
+            licencePath 'pesdk_android_license.dms'
+        }
+
+        // Modules needed
+        modules {
+            // UI modules needed are configured here
+            include 'ui:core'
+            include 'ui:text'
+            include 'ui:focus'
+            include 'ui:frame'
+            include 'ui:brush'
+            include 'ui:camera'
+            include 'ui:sticker'
+            include 'ui:transform'
+            include 'ui:adjustment'
+            include 'ui:text-design'
+
+            // Serializer
+            include 'backend:serializer'
+
+            // Asset packs needed are configured here
+            include 'assets:font-basic'
+            include 'assets:frame-basic'
+            include 'assets:sticker-shapes'
+            include 'assets:sticker-emoticons'
+        }
     }
 
     buildTypes {
@@ -26,15 +66,20 @@ android {
         sourceCompatibility JavaVersion.VERSION_1_8
         targetCompatibility JavaVersion.VERSION_1_8
     }
+    sourceSets {
+        main {
+            assets {
+                srcDirs 'src\\main\\assets'
+            }
+        }
+    }
 }
 
 dependencies {
 
     implementation 'androidx.appcompat:appcompat:1.2.0'
-    implementation 'com.google.android.material:material:1.2.1'
+    implementation 'com.google.android.material:material:1.3.0'
     implementation 'androidx.constraintlayout:constraintlayout:2.0.4'
-    implementation 'androidx.navigation:navigation-fragment:2.2.2'
-    implementation 'androidx.navigation:navigation-ui:2.2.2'
     testImplementation 'junit:junit:4.+'
     androidTestImplementation 'androidx.test.ext:junit:1.1.2'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0'

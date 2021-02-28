@@ -3,12 +3,20 @@ buildscript {
     repositories {
         google()
         jcenter()
+        maven { url 'https://artifactory.img.ly/artifactory/imgly' }
     }
     dependencies {
         classpath "com.android.tools.build:gradle:4.1.1"
 
         // NOTE: Do not place your application dependencies here; they belong
         // in the individual module build.gradle files
+
+        // (I overruled the above given advise because these dependencies are required globally)
+
+        // PhotoEditorSDK *Make sure the plugin version is the latest version. see: https://github.com/imgly/pesdk-android-demo/releases
+        classpath 'ly.img.android.pesdk:plugin:8.1.0'
+        // Kotlin plugin
+        classpath 'org.jetbrains.kotlin:kotlin-gradle-plugin:1.4.10'
     }
 }
 
