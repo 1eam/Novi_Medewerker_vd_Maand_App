@@ -14,7 +14,7 @@ buildscript {
         // (I overruled the above given advise because these dependencies are required globally)
 
         // PhotoEditorSDK *Make sure the plugin version is the latest version. see: https://github.com/imgly/pesdk-android-demo/releases
-         PhotoEditorSDclasspath 'ly.img.android.pesdk:plugin:8.1.0'
+        classpath 'ly.img.android.pesdk:plugin:8.1.0'
         // Kotlin plugin
         classpath 'org.jetbrains.kotlin:kotlin-gradle-plugin:1.4.10'
     }
