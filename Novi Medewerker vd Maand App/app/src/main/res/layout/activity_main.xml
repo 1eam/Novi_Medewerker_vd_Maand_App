@@ -1,47 +1,49 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-              xmlns:tools="http://schemas.android.com/tools"
-              android:layout_width="match_parent"
-              android:layout_height="match_parent"
-              android:orientation="vertical"
-              android:paddingLeft="16dp"
-              android:paddingRight="16dp"
-              android:paddingTop="16dp"
-              android:paddingBottom="16dp"
-              tools:context=".KEditorDemoActivity"
-              android:background="#FFFFFF"
-              android:layout_alignParentTop="true">
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_alignParentTop="true"
+    android:background="#F05326"
+    android:orientation="vertical"
+    android:paddingLeft="16dp"
+    android:paddingTop="16dp"
+    android:paddingRight="16dp"
+    android:paddingBottom="16dp"
+    tools:context=".KEditorDemoActivity">
 
     <ly.img.android.pesdk.ui.widgets.ImageSourceView
         android:layout_width="match_parent"
         android:layout_height="0dp"
+        android:layout_gravity="center_horizontal"
         android:layout_weight="2"
-        android:src="@drawable/app_launch_logo"
-        android:layout_gravity="center_horizontal"/>
+        android:src="@drawable/app_launch_logo" />
 
     <Button
         android:id="@+id/openGallery"
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_weight="1"
+        android:layout_gravity="center_horizontal"
         android:layout_margin="8dp"
-        android:textSize="12sp"
+        android:layout_weight="1"
+        android:background="@drawable/button_launcher_background"
         android:text="GALERIJ"
         android:textColor="#4C4C4C"
+        android:textSize="12sp"
         android:textStyle="bold"
-        android:layout_gravity="center_horizontal"
-        android:background="@drawable/button_launcher_background"/>
+        app:backgroundTint="#22FFFFFF" />
 
     <TextView
         android:id="@+id/infoText"
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="1"
-        android:text=""/>
+        android:text="" />
 
     <Space
         android:layout_width="wrap_content"
         android:layout_height="0dp"
-        android:layout_weight="1"/>
+        android:layout_weight="1" />
 
     <TextView
         android:id="@+id/showVersion"
@@ -49,8 +51,8 @@
         android:layout_height="wrap_content"
         android:gravity="left|start"
         android:text="versie 1"
-        android:textSize="12sp"
-        android:textColor="#4C4C4C" />
+        android:textColor="#4C4C4C"
+        android:textSize="12sp" />
 
 </LinearLayout>
 
