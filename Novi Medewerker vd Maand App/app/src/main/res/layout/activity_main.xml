@@ -30,7 +30,8 @@
         android:text="GALERIJ"
         android:textColor="#4C4C4C"
         android:textSize="12sp"
-        android:textStyle="bold" />
+        android:textStyle="bold"
+        android:onClick="myMethod"/>
 
     <TextView
         android:id="@+id/infoText"
