@@ -1,12 +1,12 @@
 package com.esther.noviMedewerkerMaandApp;
 
 import android.app.Activity;
-import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
 import android.os.Environment;
 import android.util.Log;
 import android.view.View;
+import android.widget.Button;
 
 import androidx.annotation.NonNull;
 
@@ -84,10 +84,12 @@ public class CameraDemoActivity extends Activity implements PermissionRequest.Re
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        openCamera();
+        Button startCamera = findViewById(R.id.openGallery);
+        startCamera.setOnClickListener(onStart());
     }
 
     public void myMethod (View v){
+        setContentView(R.layout.activity_main);
         openCamera();
     }
 
