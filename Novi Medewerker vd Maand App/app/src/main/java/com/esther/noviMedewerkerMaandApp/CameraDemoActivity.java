@@ -83,9 +83,6 @@ public class CameraDemoActivity extends Activity implements PermissionRequest.Re
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
-        Button startCamera = findViewById(R.id.openGallery);
-        startCamera.setOnClickListener(onStart());
     }
 
     public void myMethod (View v){
