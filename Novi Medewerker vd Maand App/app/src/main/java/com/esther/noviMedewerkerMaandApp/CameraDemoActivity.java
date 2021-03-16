@@ -13,14 +13,18 @@ import androidx.annotation.NonNull;
 import java.io.File;
 
 import ly.img.android.pesdk.PhotoEditorSettingsList;
+import ly.img.android.pesdk.assets.filter.basic.FilterPackBasic;
 import ly.img.android.pesdk.assets.font.basic.FontPackBasic;
 import ly.img.android.pesdk.assets.frame.basic.FramePackBasic;
+import ly.img.android.pesdk.assets.overlay.basic.OverlayPackBasic;
 import ly.img.android.pesdk.assets.sticker.emoticons.StickerPackEmoticons;
 import ly.img.android.pesdk.assets.sticker.shapes.StickerPackShapes;
 import ly.img.android.pesdk.backend.model.EditorSDKResult;
 import ly.img.android.pesdk.backend.model.state.manager.SettingsList;
 import ly.img.android.pesdk.ui.activity.CameraPreviewBuilder;
+import ly.img.android.pesdk.ui.model.state.UiConfigFilter;
 import ly.img.android.pesdk.ui.model.state.UiConfigFrame;
+import ly.img.android.pesdk.ui.model.state.UiConfigOverlay;
 import ly.img.android.pesdk.ui.model.state.UiConfigSticker;
 import ly.img.android.pesdk.ui.model.state.UiConfigText;
 import ly.img.android.pesdk.ui.utils.PermissionRequest;
@@ -55,9 +59,9 @@ public class CameraDemoActivity extends Activity implements PermissionRequest.Re
         // otherwise they are only available for the backend
         // See the specific feature sections of our guides if you want to know how to add our own Assets.
 
-//        settingsList.getSettingsModel(UiConfigFilter.class).setFilterList(
-//                FilterPackBasic.getFilterPack()
-//        );
+        settingsList.getSettingsModel(UiConfigFilter.class).setFilterList(
+                FilterPackBasic.getFilterPack()
+        );
 
         settingsList.getSettingsModel(UiConfigText.class).setFontList(
                 FontPackBasic.getFontPack()
@@ -67,9 +71,9 @@ public class CameraDemoActivity extends Activity implements PermissionRequest.Re
                 FramePackBasic.getFramePack()
         );
 
-//        settingsList.getSettingsModel(UiConfigOverlay.class).setOverlayList(
-//                OverlayPackBasic.getOverlayPack()
-//        );
+        settingsList.getSettingsModel(UiConfigOverlay.class).setOverlayList(
+                OverlayPackBasic.getOverlayPack()
+        );
 
         settingsList.getSettingsModel(UiConfigSticker.class).setStickerLists(
                 StickerPackEmoticons.getStickerCategory(),
