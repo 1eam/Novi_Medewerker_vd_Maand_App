@@ -5,6 +5,8 @@ import android.net.Uri;
 import android.os.Bundle;
 import android.os.Environment;
 import android.util.Log;
+import android.view.View;
+import android.widget.Button;
 
 import androidx.annotation.NonNull;
 
@@ -81,7 +83,10 @@ public class CameraDemoActivity extends Activity implements PermissionRequest.Re
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+    }
 
+    public void myMethod (View v){
+        setContentView(R.layout.activity_main);
         openCamera();
     }
 
