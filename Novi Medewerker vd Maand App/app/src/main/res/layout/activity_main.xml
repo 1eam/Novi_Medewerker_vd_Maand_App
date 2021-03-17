@@ -20,6 +20,20 @@
         android:src="@drawable/app_launch_logo" />
 
     <Button
+        android:id="@+id/openCamera"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="8dp"
+        android:layout_weight="1"
+        android:background="#C6835F"
+        android:text="CAMERA"
+        android:textColor="#4C4C4C"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        android:onClick="openCameraMethod"/>
+
+    <Button
         android:id="@+id/openGallery"
         android:layout_width="match_parent"
         android:layout_height="0dp"
@@ -31,7 +45,7 @@
         android:textColor="#4C4C4C"
         android:textSize="12sp"
         android:textStyle="bold"
-        android:onClick="myMethod"/>
+        android:onClick="openGalleryMethod"/>
 
     <TextView
         android:id="@+id/infoText"

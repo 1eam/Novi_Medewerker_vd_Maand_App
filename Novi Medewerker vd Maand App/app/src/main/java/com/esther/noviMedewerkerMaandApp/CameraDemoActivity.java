@@ -89,7 +89,7 @@ public class CameraDemoActivity extends Activity implements PermissionRequest.Re
         setContentView(R.layout.activity_main);
     }
 
-    public void myMethod (View v){
+    public void openCameraMethod (View v){
         setContentView(R.layout.activity_main);
         openCamera();
     }
