@@ -7,6 +7,7 @@ import android.os.Bundle;
 import android.os.Environment;
 import android.provider.MediaStore;
 import android.util.Log;
+import android.view.View;
 import android.widget.Toast;
 
 import androidx.annotation.NonNull;
@@ -93,6 +94,11 @@ public class EditorDemoActivity extends Activity implements PermissionRequest.Re
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        openSystemGalleryToSelectAnImage();
+    }
+
+    public void openGalleryMethod (View v){
+        setContentView(R.layout.activity_main);
         openSystemGalleryToSelectAnImage();
     }
 
