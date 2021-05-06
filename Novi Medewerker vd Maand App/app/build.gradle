@@ -6,6 +6,10 @@ android {
     compileSdkVersion 30
     buildToolsVersion "30.0.3"
 
+    buildFeatures{
+        viewBinding true
+    }
+    
     defaultConfig {
         applicationId "com.esther.noviMedewerkerMaandApp"
         minSdkVersion 18
@@ -22,7 +26,6 @@ android {
     apply plugin: 'com.android.application'
     // Kotlin Plugin
     apply plugin: 'kotlin-android'
-
 
     buildTypes {
         release {

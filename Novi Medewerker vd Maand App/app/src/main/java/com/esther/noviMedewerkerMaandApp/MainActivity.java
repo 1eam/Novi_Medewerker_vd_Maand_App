@@ -11,6 +11,9 @@ import android.view.View;
 import android.widget.Toast;
 
 import androidx.annotation.NonNull;
+import androidx.appcompat.app.AppCompatActivity;
+
+import com.esther.noviMedewerkerMaandApp.databinding.ActivityMainBinding;
 
 import java.io.File;
 import java.io.IOException;
@@ -35,7 +38,9 @@ import ly.img.android.pesdk.ui.model.state.UiConfigText;
 import ly.img.android.pesdk.ui.utils.PermissionRequest;
 import ly.img.android.serializer._3.IMGLYFileWriter;
 
-public class EditorDemoActivity extends Activity implements PermissionRequest.Response {
+public class MainActivity extends AppCompatActivity {
+
+    ActivityMainBinding binding;
 
     // Important permission request for Android 6.0 and above, don't forget to add this!
     @Override
