@@ -11,7 +11,7 @@ import com.esther.noviMedewerkerMaandApp.databinding.ActivityMainBinding;
 public class MainActivity extends AppCompatActivity {
 
     ActivityMainBinding binding;
-    int IMAGE_REQUEST_CODE;
+    int IMAGE_REQUEST_CODE = 45;
 
     @Override
     protected void onCreate(Bundle savedInstanceState){
@@ -25,7 +25,7 @@ public class MainActivity extends AppCompatActivity {
                 Intent intent = new Intent();
                 intent.setAction(Intent.ACTION_GET_CONTENT);
                 intent.setType("image/*");
-                startActivityForResult(intent, 45); 
+                startActivityForResult(intent, IMAGE_REQUEST_CODE;
             }
         });
     }
