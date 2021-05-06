@@ -1,6 +1,7 @@
 package com.esther.noviMedewerkerMaandApp;
 
 import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Toast;
@@ -8,6 +9,8 @@ import android.widget.Toast;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.dsphotoeditor.sdk.activity.DsPhotoEditorActivity;
+import com.dsphotoeditor.sdk.utils.DsPhotoEditorConstants;
 import com.esther.noviMedewerkerMaandApp.databinding.ActivityMainBinding;
 
 public class MainActivity extends AppCompatActivity {
@@ -41,7 +44,17 @@ public class MainActivity extends AppCompatActivity {
 
         if (requestCode == IMAGE_REQUEST_CODE){
             if (data.getData() != null) {
-                Toast.makeText(this, data.getData().toString(), Toast.LENGTH_SHORT).show();
+                Uri filepath = data.getData();
+
+                Intent dsPhotoEditorIntent = new Intent(this, DsPhotoEditorActivity.class);
+                dsPhotoEditorIntent.setData(filepath);
+
+                dsPhotoEditorIntent.putExtra(DsPhotoEditorConstants.DS_PHOTO_EDITOR_OUTPUT_DIRECTORY, "Novi_MVM");
+
+                int[] toolsToHide = {DsPhotoEditorActivity.TOOL_ORIENTATION, DsPhotoEditorActivity.TOOL_CROP};
+                dsPhotoEditorIntent.putExtra(DsPhotoEditorConstants.DS_PHOTO_EDITOR_TOOLS_TO_HIDE, toolsToHide);
+
+                startActivityForResult(dsPhotoEditorIntent, 200);
             }
         }
     }
