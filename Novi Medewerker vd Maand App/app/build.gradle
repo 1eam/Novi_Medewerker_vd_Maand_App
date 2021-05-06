@@ -20,47 +20,9 @@ android {
 
     // Android Plugin
     apply plugin: 'com.android.application'
-    // PESDKPlugin
-    apply plugin: 'ly.img.android.sdk'
     // Kotlin Plugin
     apply plugin: 'kotlin-android'
 
-    // PESDKPlugin configuration
-    imglyConfig {
-
-        pesdk {
-            enabled true
-            licencePath 'pesdk_android_license.dms'
-        }
-
-        // Modules needed
-        modules {
-            // UI modules needed are configured here
-            include 'ui:core'
-            include 'ui:text'
-            include 'ui:focus'
-            include 'ui:frame'
-            include 'ui:brush'
-            include 'ui:filter'
-            include 'ui:camera'
-            include 'ui:sticker'
-            include 'ui:overlay'
-            include 'ui:transform'
-            include 'ui:adjustment'
-            include 'ui:text-design'
-
-            // Serializer
-            include 'backend:serializer'
-
-            // Asset packs needed are configured here
-            include 'assets:font-basic'
-            include 'assets:frame-basic'
-            include 'assets:filter-basic'
-            include 'assets:overlay-basic'
-            include 'assets:sticker-shapes'
-            include 'assets:sticker-emoticons'
-        }
-    }
 
     buildTypes {
         release {
