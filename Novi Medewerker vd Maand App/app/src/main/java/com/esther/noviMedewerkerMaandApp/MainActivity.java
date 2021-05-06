@@ -19,6 +19,7 @@ public class MainActivity extends AppCompatActivity {
         binding = ActivityMainBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
 
+//        opens gallery
         binding.openGalleryButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
