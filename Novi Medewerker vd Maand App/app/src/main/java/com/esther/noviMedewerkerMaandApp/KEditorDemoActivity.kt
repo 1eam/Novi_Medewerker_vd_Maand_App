@@ -10,6 +10,7 @@ import android.provider.MediaStore
 import android.util.Log
 import android.widget.Button
 import android.widget.Toast
+import com.esther.noviMedewerkerMaandApp.R
 import java.io.File
 import java.io.IOException
 import ly.img.android.pesdk.PhotoEditorSettingsList
