@@ -57,5 +57,10 @@ public class MainActivity extends AppCompatActivity {
                 startActivityForResult(dsPhotoEditorIntent, 200);
             }
         }
+        if (requestCode == 200){
+            Intent intent = new Intent(MainActivity.this, ResultActivity.class);
+            intent.setData(data.getData());
+            startActivity(intent);
+        }
     }
 }
