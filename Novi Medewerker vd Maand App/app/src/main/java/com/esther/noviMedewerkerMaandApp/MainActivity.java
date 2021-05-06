@@ -25,7 +25,7 @@ public class MainActivity extends AppCompatActivity {
                 Intent intent = new Intent();
                 intent.setAction(Intent.ACTION_GET_CONTENT);
                 intent.setType("image/*");
-                startActivityForResult(intent, IMAGE_REQUEST_CODE;
+                startActivityForResult(intent, IMAGE_REQUEST_CODE);
             }
         });
     }
