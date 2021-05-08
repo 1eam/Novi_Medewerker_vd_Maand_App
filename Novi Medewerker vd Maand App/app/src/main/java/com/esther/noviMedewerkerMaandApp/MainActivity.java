@@ -48,7 +48,7 @@ public class MainActivity extends AppCompatActivity {
                 Intent dsPhotoEditorIntent = new Intent(this, DsPhotoEditorActivity.class);
                 dsPhotoEditorIntent.setData(filepath);
 
-                dsPhotoEditorIntent.putExtra(DsPhotoEditorConstants.DS_PHOTO_EDITOR_OUTPUT_DIRECTORY, "Novi Medewerker v/d maand gallerij");
+                dsPhotoEditorIntent.putExtra(DsPhotoEditorConstants.DS_PHOTO_EDITOR_OUTPUT_DIRECTORY, "Novi Medewerker vd maand gallerij");
 
                 int[] toolsToHide = {DsPhotoEditorActivity.TOOL_ORIENTATION, DsPhotoEditorActivity.TOOL_CROP};
                 dsPhotoEditorIntent.putExtra(DsPhotoEditorConstants.DS_PHOTO_EDITOR_TOOLS_TO_HIDE, toolsToHide);
