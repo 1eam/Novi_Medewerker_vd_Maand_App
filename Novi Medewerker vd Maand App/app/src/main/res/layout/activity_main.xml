@@ -30,7 +30,7 @@
         android:text="CAMERA"
         android:textColor="#FFFFFF"
         android:textSize="16sp"
-        android:textStyle="bold" />
+        android:textStyle="normal" />
 
     <Button
         android:id="@+id/openGalleryButton"
@@ -44,7 +44,7 @@
         android:text="GALERIJ"
         android:textColor="#FDFDFD"
         android:textSize="16sp"
-        android:textStyle="bold" />
+        android:textStyle="normal" />
 
     <Space
         android:layout_width="wrap_content"
@@ -57,7 +57,7 @@
         android:layout_height="wrap_content"
         android:gravity="left|start"
         android:text="versie 1"
-        android:textColor="#4C4C4C"
+        android:textColor="#FFFFFF"
         android:textSize="12sp" />
 
 </LinearLayout>
