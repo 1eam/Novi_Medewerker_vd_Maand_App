@@ -40,7 +40,6 @@
         android:layout_margin="8dp"
         android:layout_weight="1"
         android:backgroundTint="#FD9070"
-        android:onClick="openGalleryMethod"
         android:text="GALERIJ"
         android:textColor="#FDFDFD"
         android:textSize="16sp"
