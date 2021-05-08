@@ -17,5 +17,6 @@ public class ResultActivity extends AppCompatActivity {
         setContentView(binding.getRoot());
 
         binding.imageView.setImageURI(getIntent().getData());
+
     }
 }

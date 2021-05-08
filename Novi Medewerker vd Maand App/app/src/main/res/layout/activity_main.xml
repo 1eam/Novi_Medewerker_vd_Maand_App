@@ -25,12 +25,12 @@
         android:layout_gravity="center_horizontal"
         android:layout_margin="8dp"
         android:layout_weight="1"
-        android:background="#C6835F"
+        android:backgroundTint="#FD9070"
+        android:onClick="openCameraMethod"
         android:text="CAMERA"
         android:textColor="#4C4C4C"
         android:textSize="12sp"
-        android:textStyle="bold"
-        android:onClick="openCameraMethod"/>
+        android:textStyle="bold" />
 
     <Button
         android:id="@+id/openGalleryButton"
@@ -39,12 +39,12 @@
         android:layout_gravity="center_horizontal"
         android:layout_margin="8dp"
         android:layout_weight="1"
-        android:background="#C6835F"
+        android:backgroundTint="#FD9070"
+        android:onClick="openGalleryMethod"
         android:text="GALERIJ"
         android:textColor="#4C4C4C"
         android:textSize="12sp"
-        android:textStyle="bold"
-        android:onClick="openGalleryMethod"/>
+        android:textStyle="bold" />
 
     <TextView
         android:id="@+id/infoText"
