@@ -6,61 +6,28 @@ android {
     compileSdkVersion 30
     buildToolsVersion "30.0.3"
 
+    buildFeatures{
+        viewBinding true
+    }
+    
     defaultConfig {
         applicationId "com.esther.noviMedewerkerMaandApp"
-        minSdkVersion 18
+        minSdkVersion 21
         targetSdkVersion 30
         versionCode 1
         versionName "1.0"
-
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
 
-        multiDexEnabled true
+        renderscriptTargetApi 21
+        renderscriptSupportModeEnabled true
+
+//        multiDexEnabled true
     }
 
     // Android Plugin
     apply plugin: 'com.android.application'
-    // PESDKPlugin
-    apply plugin: 'ly.img.android.sdk'
     // Kotlin Plugin
     apply plugin: 'kotlin-android'
-
-    // PESDKPlugin configuration
-    imglyConfig {
-
-        pesdk {
-            enabled true
-            licencePath 'pesdk_android_license.dms'
-        }
-
-        // Modules needed
-        modules {
-            // UI modules needed are configured here
-            include 'ui:core'
-            include 'ui:text'
-            include 'ui:focus'
-            include 'ui:frame'
-            include 'ui:brush'
-            include 'ui:filter'
-            include 'ui:camera'
-            include 'ui:sticker'
-            include 'ui:overlay'
-            include 'ui:transform'
-            include 'ui:adjustment'
-            include 'ui:text-design'
-
-            // Serializer
-            include 'backend:serializer'
-
-            // Asset packs needed are configured here
-            include 'assets:font-basic'
-            include 'assets:frame-basic'
-            include 'assets:filter-basic'
-            include 'assets:overlay-basic'
-            include 'assets:sticker-shapes'
-            include 'assets:sticker-emoticons'
-        }
-    }
 
     buildTypes {
         release {
@@ -89,4 +56,16 @@ dependencies {
     testImplementation 'junit:junit:4.+'
     androidTestImplementation 'androidx.test.ext:junit:1.1.2'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0'
+
+    // DS Photo Editor SDK
+
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+
+    implementation(name:'ds-photo-editor-sdk-v10', ext:'aar')
+
+    // SDK related dependencies
+    implementation 'io.reactivex.rxjava2:rxjava:2.1.0'
+    implementation 'io.reactivex.rxjava2:rxandroid:2.0.1'
+    implementation 'com.github.bumptech.glide:glide:4.11.0'
+    annotationProcessor 'com.github.bumptech.glide:compiler:4.11.0'
 }

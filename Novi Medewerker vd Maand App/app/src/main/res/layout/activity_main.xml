@@ -10,49 +10,40 @@
     android:paddingTop="16dp"
     android:paddingRight="16dp"
     android:paddingBottom="16dp"
-    tools:context=".EditorDemoActivity">
+    tools:context=".MainActivity">
 
-    <ly.img.android.pesdk.ui.widgets.ImageSourceView
+    <ImageView
+        android:id="@+id/imageView2"
         android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_gravity="center_horizontal"
-        android:layout_weight="2"
-        android:src="@drawable/app_launch_logo" />
+        android:layout_height="281dp"
+        android:src="@drawable/main_activity_background" />
 
     <Button
-        android:id="@+id/openCamera"
+        android:id="@+id/cameraButton"
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_gravity="center_horizontal"
         android:layout_margin="8dp"
         android:layout_weight="1"
-        android:background="#C6835F"
+        android:backgroundTint="#FD9070"
+        android:onClick="openCameraMethod"
         android:text="CAMERA"
-        android:textColor="#4C4C4C"
-        android:textSize="12sp"
-        android:textStyle="bold"
-        android:onClick="openCameraMethod"/>
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        android:textStyle="normal" />
 
     <Button
-        android:id="@+id/openGallery"
+        android:id="@+id/openGalleryButton"
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_gravity="center_horizontal"
         android:layout_margin="8dp"
         android:layout_weight="1"
-        android:background="#C6835F"
+        android:backgroundTint="#FD9070"
         android:text="GALERIJ"
-        android:textColor="#4C4C4C"
-        android:textSize="12sp"
-        android:textStyle="bold"
-        android:onClick="openGalleryMethod"/>
-
-    <TextView
-        android:id="@+id/infoText"
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="1"
-        android:text="" />
+        android:textColor="#FDFDFD"
+        android:textSize="16sp"
+        android:textStyle="normal" />
 
     <Space
         android:layout_width="wrap_content"
@@ -65,7 +56,7 @@
         android:layout_height="wrap_content"
         android:gravity="left|start"
         android:text="versie 1"
-        android:textColor="#4C4C4C"
+        android:textColor="#FFFFFF"
         android:textSize="12sp" />
 
 </LinearLayout>
