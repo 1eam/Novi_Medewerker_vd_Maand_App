@@ -18,7 +18,6 @@ import com.dsphotoeditor.sdk.utils.DsPhotoEditorConstants;
 import com.esther.noviMedewerkerMaandApp.databinding.ActivityMainBinding;
 
 import java.io.ByteArrayOutputStream;
-import java.net.URI;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -104,7 +103,6 @@ public class MainActivity extends AppCompatActivity {
             dsPhotoEditorIntent.putExtra(DsPhotoEditorConstants.DS_PHOTO_EDITOR_TOOLS_TO_HIDE, toolsToHide);
 
             startActivityForResult(dsPhotoEditorIntent, RESULT_CODE);
-
         }
     }
 
