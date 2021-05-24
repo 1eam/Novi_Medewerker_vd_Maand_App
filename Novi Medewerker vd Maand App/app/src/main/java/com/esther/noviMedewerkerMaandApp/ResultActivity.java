@@ -27,6 +27,9 @@ public class ResultActivity extends AppCompatActivity {
         setContentView(binding.getRoot());
         binding.edittedImagePreview.setImageURI(getIntent().getData());
 
+//      hides Actionbar
+        getSupportActionBar().hide();
+
 //      opens Share popup
         binding.shareButton.setOnClickListener(new View.OnClickListener() {
             @Override
