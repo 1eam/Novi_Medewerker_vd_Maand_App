@@ -23,6 +23,8 @@ import com.dsphotoeditor.sdk.utils.DsPhotoEditorConstants;
 import com.esther.noviMedewerkerMaandApp.databinding.ActivityMainBinding;
 
 import java.io.ByteArrayOutputStream;
+import java.util.Calendar;
+import java.util.Date;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -112,9 +114,10 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public Uri getImageUri(Bitmap bitmap){
+        Date date = Calendar.getInstance().getTime();
         ByteArrayOutputStream arrayOutputStream = new ByteArrayOutputStream();
         bitmap.compress(Bitmap.CompressFormat.JPEG , 100, arrayOutputStream);
-        String path = MediaStore.Images.Media.insertImage(getContentResolver(), bitmap, "Title", null);
+        String path = MediaStore.Images.Media.insertImage(getContentResolver(), bitmap, "MedewerkerNoviCam " + date,null);
         return Uri.parse(path);
     }
 }
