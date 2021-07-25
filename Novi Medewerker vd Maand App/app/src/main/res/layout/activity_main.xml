@@ -26,7 +26,6 @@
         android:layout_margin="8dp"
         android:layout_weight="1"
         android:backgroundTint="#FD9070"
-        android:onClick="openCameraMethod"
         android:text="CAMERA"
         android:textColor="#FFFFFF"
         android:textSize="16sp"
